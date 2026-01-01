@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'XAUUSD Trading Journal - FundedNext 2026',
@@ -17,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-gray-900 text-gray-100 min-h-screen"}>
+      <body className="bg-gray-900 text-gray-100 min-h-screen">
         <Navbar />
         <main className="max-w-6xl mx-auto p-6">
           {children}
